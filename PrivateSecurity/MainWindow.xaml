@@ -1,0 +1,29 @@
+﻿<Window x:Class="PrivateSecurity.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrivateSecurity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStyle="None">
+    <DockPanel>
+        <Border DockPanel.Dock="Top">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0">Private Security</TextBlock>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center">VPN Client</TextBlock>
+                <StackPanel Orientation="Horizontal" Grid.Column="2" HorizontalAlignment="Right">
+                    <Button Width="20" Height="20" Background="#00DDDDDD" BorderBrush="#00707070">_</Button>
+                    <Button Width="20" Height="20" Background="#00707070" BorderBrush="#00707070">🗗</Button>
+                    <Button Width="20" Height="20" Background="#00707070" BorderBrush="#00707070">✕</Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Border DockPanel.Dock="Left"></Border>
+    </DockPanel>
+</Window>
